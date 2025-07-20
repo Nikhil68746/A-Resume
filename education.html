@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ansh | Education</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f9faff;
+      color: #222;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: white;
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      z-index: 999;
+    }
+    nav a {
+      margin: 0 18px;
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: 700;
+      font-size: 16px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 900px;
+      margin: 50px auto 80px auto;
+      padding: 0 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #0077cc;
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+    .edu-card {
+      background: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      padding: 25px 30px;
+      margin-bottom: 30px;
+      transition: transform 0.3s ease;
+    }
+    .edu-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .edu-card h2 {
+      color: #004a99;
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+    .edu-card h3 {
+      color: #333;
+      font-weight: 600;
+      margin-bottom: 8px;
+      font-size: 20px;
+    }
+    .edu-card p {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #555;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #e0e0e0;
+      color: #555;
+      font-size: 14px;
+      margin-top: 80px;
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 28px;
+      }
+      .edu-card {
+        padding: 20px;
+      }
+      .edu-card h2 {
+        font-size: 20px;
+      }
+      .edu-card h3 {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="education.html">Education</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Education</h1>
+
+    <div class="edu-card">
+      <h2>Diploma in Electrical Engineering</h2>
+      <h3>Government Polytechnic (2022 – 2025)</h3>
+      <p>
+        Successfully completed a Diploma in Electrical Engineering in 2025.  
+        The curriculum included in-depth studies of electrical circuits, power systems, control systems, and hands-on labs with real hardware.  
+        Developed strong skills in troubleshooting, circuit design, and embedded systems programming.
+      </p>
+      <p>
+        Participated in various workshops and seminars on renewable energy and automation during the course.  
+        Graduated with commendable academic performance and practical project experience.
+      </p>
+    </div>
+
+    <div class="edu-card">
+      <h2>10th Standard</h2>
+      <h3>MRL Senior Secondary School (Passed in 2022)</h3>
+      <p>
+        Completed secondary education with a focus on science and mathematics.  
+        Achieved excellent grades in Physics, Chemistry, and Mathematics.  
+        Actively took part in science fairs, inter-school competitions, and extracurricular activities, showcasing a passion for technology and innovation.
+      </p>
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2025 Ansh. All rights reserved.
+  </footer>
+
+</body>
+</html>
