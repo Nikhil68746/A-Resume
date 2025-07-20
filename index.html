@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ansh | Electrical Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f5f7fa;
+      color: #222;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: #fff;
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      z-index: 999;
+    }
+    nav a {
+      margin: 0 18px;
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: 700;
+      font-size: 16px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(to bottom right, #ffffff, #e3f2fd);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .hero h1 {
+      font-size: 48px;
+      color: #0077cc;
+    }
+    .typing {
+      font-size: 22px;
+      font-weight: 700;
+      color: #444;
+      margin-top: 12px;
+      height: 30px;
+      min-width: 300px;
+      border-right: 3px solid #0077cc;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .desc {
+      margin-top: 25px;
+      font-size: 18px;
+      max-width: 650px;
+      color: #333;
+      line-height: 1.5;
+    }
+    .btn-contact {
+      margin-top: 40px;
+      background-color: #0077cc;
+      color: white;
+      padding: 14px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .btn-contact:hover {
+      background-color: #005fa3;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #e0e0e0;
+      color: #555;
+      font-size: 14px;
+      margin-top: 60px;
+    }
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 34px;
+      }
+      .typing {
+        font-size: 18px;
+        min-width: 200px;
+      }
+      .desc {
+        font-size: 16px;
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="education.html">Education</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Hi, I'm Ansh</h1>
+    <div class="typing" id="typingText"></div>
+    <p class="desc">
+      I am a passionate Electrical Engineer graduate, skilled in Arduino programming, embedded systems, and problem-solving.  
+      I love creating practical projects that make a difference.
+    </p>
+    <button class="btn-contact" onclick="location.href='contact.html'">Contact Me</button>
+  </section>
+
+  <footer>
+    &copy; 2025 Ansh. All rights reserved.
+  </footer>
+
+  <script>
+    const phrases = [
+      "Electrical Engineer Graduate",
+      "Arduino Project Developer",
+      "Embedded Systems Enthusiast",
+      "Innovator & Problem Solver"
+    ];
+    let i = 0, j = 0;
+    let isDeleting = false;
+    const typingSpeed = 100;
+    const delayBetweenPhrases = 1500;
+    const typingElement = document.getElementById('typingText');
+
+    function type() {
+      const current = phrases[i];
+      if (isDeleting) {
+        j--;
+        typingElement.textContent = current.substring(0, j);
+        if (j === 0) {
+          isDeleting = false;
+          i = (i + 1) % phrases.length;
+          setTimeout(type, 500);
+        } else {
+          setTimeout(type, typingSpeed / 2);
+        }
+      } else {
+        j++;
+        typingElement.textContent = current.substring(0, j);
+        if (j === current.length) {
+          isDeleting = true;
+          setTimeout(type, delayBetweenPhrases);
+        } else {
+          setTimeout(type, typingSpeed);
+        }
+      }
+    }
+    type();
+  </script>
+
+</body>
+</html>
