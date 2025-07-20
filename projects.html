@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ansh | Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f9faff;
+      color: #222;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: white;
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      z-index: 999;
+    }
+    nav a {
+      margin: 0 18px;
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: 700;
+      font-size: 16px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 900px;
+      margin: 50px auto 80px auto;
+      padding: 0 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #0077cc;
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+    .project-card {
+      background: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      padding: 25px 30px;
+      margin-bottom: 30px;
+      transition: transform 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .project-card h2 {
+      color: #004a99;
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+    .project-card p {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #555;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #e0e0e0;
+      color: #555;
+      font-size: 14px;
+      margin-top: 80px;
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 28px;
+      }
+      .project-card {
+        padding: 20px;
+      }
+      .project-card h2 {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="education.html">Education</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Projects</h1>
+
+    <div class="project-card">
+      <h2>Traffic Light System Using Arduino</h2>
+      <p>
+        Developed a fully functional traffic light simulation system using Arduino UNO and LEDs.  
+        Implemented timing sequences for red, yellow, and green lights to mimic real-world traffic control.  
+        Gained practical experience in embedded programming, circuit design, and hardware interfacing.  
+        This project enhanced understanding of microcontroller basics and real-time signal processing.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h2>Car Theft Detection & Toll Tax Automation</h2>
+      <p>
+        Designed a dual-purpose embedded system combining car theft detection and automated toll tax collection.  
+        Utilized RFID technology to identify vehicles and trigger alerts in case of theft attempts via sensors and buzzers.  
+        Implemented toll tax deduction logic with seamless integration for smart city transport applications.  
+        Developed problem-solving skills in system integration and IoT concepts.
+      </p>
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2025 Ansh. All rights reserved.
+  </footer>
+
+</body>
+</html>
